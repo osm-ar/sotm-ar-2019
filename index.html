@@ -9,20 +9,21 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <!-- <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Leaflet -->
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-  crossorigin=""/>
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-  integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-  crossorigin=""></script>
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -63,11 +64,14 @@
           <!--<li><a href="#speakers">Disertantes</a></li>-->
           <li><a href="#schedule">Agenda</a></li>
           <li><a href="#venue">El lugar</a></li>
-          <!--<li><a href="#hotels">La ciudad</a></li>-->
+          <li><a href="#hotels">La ciudad</a></li>
           <!--<li><a href="#gallery">Galería</a></li>-->
           <li><a href="#supporters">Sponsors</a></li>
+          <li><a href="#faq">F.A.Q.</a></li>
           <!--<li><a href="#contact">Contacto</a></li>-->
-          <li class="buy-tickets"><a href="https://www.eventbrite.com.ar/e/state-of-the-map-argentina-santa-fe-2019-tickets-72368779969">Registrate</a></li>
+          <li class="buy-tickets"><a
+              href="https://www.eventbrite.com.ar/e/state-of-the-map-argentina-santa-fe-2019-tickets-72368779969">Registrate</a>
+          </li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -248,7 +252,9 @@
               <div class="col-md-2"><time>09:00 AM</time></div>
               <div class="col-md-10">
                 <h4>Acreditación</h4>
-                <p>Te recomendamos registrarte <a href="https://www.eventbrite.com.ar/e/state-of-the-map-argentina-santa-fe-2019-tickets-72368779969">aquí</a>.</p>
+                <p>Te recomendamos registrarte <a
+                    href="https://www.eventbrite.com.ar/e/state-of-the-map-argentina-santa-fe-2019-tickets-72368779969">aquí</a>.
+                </p>
               </div>
             </div>
 
@@ -270,7 +276,7 @@
                 <p>Metas y objetivos para mejorar la calidad de datos en la capital de la provincia.</p>
               </div>
             </div>
-            
+
             <div class="row schedule-item">
               <div class="col-md-2"><time></time></div>
               <div class="col-md-10">
@@ -299,25 +305,27 @@
 
         <div class="row no-gutters">
           <div class="col-lg-6 venue-map">
-              <div id="mapid"></div>
-              <script type="text/javascript">
-                var mymap = L.map('mapid').setView([-31.61768, -60.67539], 16);
-                L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                  maxZoom: 18,
-                  id: 'mapbox.streets',
-                  accessToken: 'pk.eyJ1IjoianVhbmJsYXMwOSIsImEiOiJjaW9kaG44NHIwMDhsdGJrbWszM2c5ZnM3In0.q1-r12hdswVkEP1T3pAJBA'
-                }).addTo(mymap);
-                var marker = L.marker([-31.61768, -60.67539]).addTo(mymap);
-                marker.bindPopup("<b>UTN FRSF</b><br>Lavaisse 610").openPopup();
-              </script>
+            <div id="mapid"></div>
+            <script type="text/javascript">
+              var mymap = L.map('mapid').setView([-31.61768, -60.67539], 16);
+              L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                maxZoom: 18,
+                id: 'mapbox.streets',
+                accessToken: 'pk.eyJ1IjoianVhbmJsYXMwOSIsImEiOiJjaW9kaG44NHIwMDhsdGJrbWszM2c5ZnM3In0.q1-r12hdswVkEP1T3pAJBA'
+              }).addTo(mymap);
+              var marker = L.marker([-31.61768, -60.67539]).addTo(mymap);
+              marker.bindPopup("<b>UTN FRSF</b><br>Lavaisse 610").openPopup();
+            </script>
           </div>
 
           <div class="col-lg-6 venue-info">
             <div class="row justify-content-center">
               <div class="col-11 col-lg-8">
                 <h3>UTN - F.R. Santa Fe</h3>
-                <p>El Aula Setúbal de la Universidad Tecnológica Nacional - Facultad Regional Santa Fe es un espacio versátil equipado para realizar charlas y talleres, esto sumado al marco universitario forman una combinación propicia para la realización del evento.</p>
+                <p>El Aula Setúbal de la Universidad Tecnológica Nacional - Facultad Regional Santa Fe es un espacio
+                  versátil equipado para realizar charlas y talleres, esto sumado al marco universitario forman una
+                  combinación propicia para la realización del evento.</p>
               </div>
             </div>
           </div>
@@ -366,9 +374,9 @@
     </section>
 
     <!--==========================
-      Hotels Section
-    
-    
+      Hotels Section    
+    ============================-->
+
     <section id="hotels" class="section-with-bg wow fadeInUp">
 
       <div class="container">
@@ -384,12 +392,17 @@
               <div class="hotel-img">
                 <img src="img/hotels/1.jpg" alt="Hotel 1" class="img-fluid">
               </div>
-              <h3><a href="#">¿Cómo llegar?</a></h3>
+              <h3><a href="#">Llegar a la ciudad</a></h3>
               <p>
-                <b>Bicicleta:</b>
-                <i class="fa fa-angle-right"></i> <a href="http://santafeciudad.gov.ar/blogs/movilidad/subite-a-la-bici/">Subite a la bici</a></li> <br>
-                <b>Colectivos urbanos:</b> <br>
-                <i class="fa fa-angle-right"></i> <a href="http://cuandopasa.smartmovepro.net/">¿Cuándo Pasa?</a> (recorridos y paradas)</li> <br>
+                <b>Ómnibus:</b><br>
+                <i class="fa fa-angle-right"></i> <a
+                  href="https://www.plataforma10.com.ar/">Plataforma10</a></li> <br>
+                <b>Avión:</b><br>
+                <i class="fa fa-angle-right"></i> <a
+                  href="https://www.aerolineas.com.ar/">Aerolíneas Argentinas</a></li> <br>
+                <i class="fa fa-angle-right"></i> <a
+                  href="https://www.flyest.aero/">Flyest</a></li><br>
+                (Desde el <a href="http://aeropuertosantafe.com.ar/">Aeropuerto de Santa Fe</a> puede tomar el <a href="http://aeropuertosantafe.com.ar/images/aerobus0909.jpeg">AeroBus</a>)
               </p>
             </div>
           </div>
@@ -399,15 +412,22 @@
               <div class="hotel-img">
                 <img src="img/hotels/2.jpg" alt="Hotel 2" class="img-fluid">
               </div>
-              <h3><a href="#">Hotel 2</a></h3>
-              <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-full"></i>
-              </div>
-              <p>0.5 Mile from the Venue</p>
+              <h3><a href="#">Moverse en la ciudad</a></h3>
+              <p>
+                <b>Bicicleta:</b><br>
+                <i class="fa fa-angle-right"></i> <a
+                  href="http://santafeciudad.gov.ar/blogs/movilidad/subite-a-la-bici/">Subite a la bici</a></li> <br>
+                <b>Colectivos urbanos:</b> <br>
+                <i class="fa fa-angle-right"></i> <a href="http://cuandopasa.smartmovepro.net/">¿Cuándo Pasa?</a></li>
+                <br>
+                <i class="fa fa-angle-right"></i> <a
+                  href="https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-UTN_Facultad_Regional_Santa_Fe-Santa_Fe-site_38935084-5198">Moovit</a>
+                </li> <br>
+                <b>Aplicaciones útiles:</b><br>
+                <i class="fa fa-angle-right"></i> <a
+                  href="https://play.google.com/store/apps/details?id=com.santafeciudad.turismo">Turismo SFC</a></li>
+                <br>
+              </p>
             </div>
           </div>
 
@@ -416,14 +436,16 @@
               <div class="hotel-img">
                 <img src="img/hotels/3.jpg" alt="Hotel 3" class="img-fluid">
               </div>
-              <h3><a href="#">Hotel 3</a></h3>
-              <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p>0.6 Mile from the Venue</p>
+              <h3><a href="#">Hospedaje</a></h3>
+              <p>
+                <b>Webs de reserva:</b> <br>
+                <i class="fa fa-angle-right"></i> <a
+                  href="https://www.booking.com/searchresults.es.html?aid=373414&label=san-juan-C0OIUKD8ua_nwhj0QT1OQgS139971772920%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-2658240345%3Alp1000085%3Ali%3Adec%3Adm&lang=es&sid=a3f719915d6f34c0f0c1205e8f73d0cc&sb=1&src=searchresults&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fsearchresults.es.html%3Faid%3D373414%3Blabel%3Dsan-juan-C0OIUKD8ua_nwhj0QT1OQgS139971772920%253Apl%253Ata%253Ap1%253Ap2%253Aac%253Aap1t1%253Aneg%253Afi%253Atikwd-2658240345%253Alp1000085%253Ali%253Adec%253Adm%3Bsid%3Da3f719915d6f34c0f0c1205e8f73d0cc%3Btmpl%3Dsearchresults%3Bcheckin_month%3D11%3Bcheckin_monthday%3D14%3Bcheckin_year%3D2019%3Bcheckout_month%3D11%3Bcheckout_monthday%3D17%3Bcheckout_year%3D2019%3Bcity%3D-910745%3Bclass_interval%3D1%3Bdest_id%3D-910745%3Bdest_type%3Dcity%3Bdtdisc%3D0%3Bfrom_sf%3D1%3Bgroup_adults%3D1%3Bgroup_children%3D0%3Binac%3D0%3Bindex_postcard%3D0%3Blabel_click%3Dundef%3Bno_rooms%3D1%3Boffset%3D0%3Border%3Dpopularity%3Bpostcard%3D0%3Broom1%3DA%3Bsb_price_type%3Dtotal%3Bshw_aparth%3D1%3Bslp_r_match%3D0%3Bsrc%3Dsearchresults%3Bsrc_elem%3Dsb%3Bsrpvid%3Da10d6ed468b300a8%3Bss%3DEncarnaci%25C3%25B3n%3Bss_all%3D0%3Bssb%3Dempty%3Bsshis%3D0%3Bssne%3DEncarnaci%25C3%25B3n%3Bssne_untouched%3DEncarnaci%25C3%25B3n%3Btop_ufis%3D1%26%3B&order=popularity&ss=Santa+Fe%2C+Provincia+de+Santa+Fe%2C+Argentina&is_ski_area=&ssne=Encarnaci%C3%B3n&ssne_untouched=Encarnaci%C3%B3n&city=-910745&checkin_monthday=12&checkin_month=10&checkin_year=2019&checkout_monthday=13&checkout_month=10&checkout_year=2019&group_adults=1&group_children=0&no_rooms=1&from_sf=1&ss_raw=Santa+Fe&ac_position=0&ac_langcode=es&ac_click_type=b&dest_id=-1014485&dest_type=city&iata=SFN&place_id_lat=-31.61845&place_id_lon=-60.70297&search_pageview_id=a10d6ed468b300a8&search_selected=true&search_pageview_id=a10d6ed468b300a8&ac_suggestion_list_length=5&ac_suggestion_theme_list_length=0#map_closed">Booking.com</a>
+                </li> <br>
+                <i class="fa fa-angle-right"></i> <a
+                  href="https://www.trivago.com.ar/?aDateRange%5Barr%5D=2019-10-12&aDateRange%5Bdep%5D=2019-10-13&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=51399&iRoomType=1&aRooms%5B0%5D%5Badults%5D=1&cpt2=73276%2F200&iViewType=0&bIsSeoPage=0&sortingId=5&slideoutsPageItemId=&iGeoDistanceLimit=20000&address=&addressGeoCode=&offset=0&ra=">Trivago</a>
+                </li> <br>
+              </p>
             </div>
           </div>
 
@@ -431,9 +453,8 @@
       </div>
 
     </section>
-    ============================-->
 
-    
+
 
     <!--==========================
       Galería
@@ -470,23 +491,22 @@
       <div class="container">
         <div class="section-header">
           <h2>Sponsors</h2>
+          <p>Este evento es realizado con el apoyo de:</p>
         </div>
-       
 
-        
         <div class="row no-gutters supporters-wrap clearfix">
           <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="img/supporters/utn.jpg" class="img-fluid" alt="">
-            </div>
+            <div class="supporter-logo"><a href="https://www.frsf.utn.edu.ar/">
+                <img src="img/supporters/utn.jpg" class="img-fluid" alt="">
+              </a></div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo"><a href="http://geolibres.org.ar/">
+                <img src="img/supporters/geolibres.jpg" class="img-fluid" alt="">
+              </a></div>
           </div>
           <!--
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="img/supporters/santalab.png" class="img-fluid" alt="">
-            </div>
-          </div>
-          
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="img/supporters/3.png" class="img-fluid" alt="">
@@ -524,10 +544,10 @@
           </div>
           -->
         </div>
-        
+
         <div class="text-center">
-            <p>Para sumarte a nosotros:</p>
-            <a href="mailto:sotm-ar@protonmail.com"><button>Apoyá el evento</button></a>
+          <p>Para sumarte a nosotros:</p>
+          <a href="mailto:sotm-ar@protonmail.com"><button>Apoyá el evento</button></a>
         </div>
 
       </div>
@@ -536,74 +556,64 @@
 
     <!--==========================
       F.A.Q Section
-    
+    ============================-->
+
     <section id="faq" class="wow fadeInUp">
 
       <div class="container">
 
         <div class="section-header">
-          <h2>F.A.Q </h2>
+          <h2>Preguntas Frecuentes </h2>
         </div>
 
         <div class="row justify-content-center">
           <div class="col-lg-9">
-              <ul id="faq-list">
+            <ul id="faq-list">
 
-                <li>
-                  <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq1" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                    </p>
-                  </div>
-                </li>
-      
-                <li>
-                  <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq2" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                    </p>
-                  </div>
-                </li>
-      
-                <li>
-                  <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq3" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                    </p>
-                  </div>
-                </li>
-      
-                <li>
-                  <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq4" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                    </p>
-                  </div>
-                </li>
-      
-                <li>
-                  <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq5" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                    </p>
-                  </div>
-                </li>
-      
-                <li>
-                  <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq6" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-                    </p>
-                  </div>
-                </li>
-      
-              </ul>
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#faq1">¿Cuánto cuesta la entrada? <i
+                    class="fa fa-minus-circle"></i></a>
+                <div id="faq1" class="collapse" data-parent="#faq-list">
+                  <p>
+                    ¡Nada! La entrada es <b>libre y gratuita</b> para todo el público.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq2" class="collapsed">¿A quién va dirigido? <i
+                    class="fa fa-minus-circle"></i></a>
+                <div id="faq2" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Usuarios de OpenStreetMap, personas que trabajan con los SIG, desarrolladores de aplicaciones,
+                    público en general.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq3" class="collapsed">¿Se entrega certificado de asistencia? <i
+                    class="fa fa-minus-circle"></i></a>
+                <div id="faq3" class="collapse" data-parent="#faq-list">
+                  <p>
+                    <b>Sí</b>, te recomendamos solicitarlo con antelación al correo del evento (sotm-ar@protonmail.com)
+                    o notificarlo en la acreditación.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq4" class="collapsed">¿Es necesario registrarse? <i
+                    class="fa fa-minus-circle"></i></a>
+                <div id="faq4" class="collapse" data-parent="#faq-list">
+                  <p>
+                    <b>No</b>, pero te sugerimos hacerlo para tener un estimado de la gente que esperamos para
+                    adaptarnos con el espacio.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
           </div>
         </div>
 
@@ -611,7 +621,7 @@
 
     </section>
 
-    ============================-->
+
 
     <!--==========================
       Subscribe Section
@@ -709,14 +719,14 @@
     </section>
     ============================-->
     <!-- #contact -->
-    
+
   </main>
 
 
   <!--==========================
     Footer
   ===========================-->
-  
+
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -751,7 +761,7 @@
               <strong>Correo: </strong><a href="mailto:sotm-ar@protonmail.com">sotm-ar@protonmail.com</a> <br>
               <strong><a href="https://wiki.openstreetmap.org/wiki/Argentina">OSM Wiki</a></strong> <br>
               <strong><a href="https://t.me/osm-ar">Grupo Telegram</strong></a>
-              
+
             </p>
 
             <div class="social-links">
@@ -770,10 +780,10 @@
 
     <div class="container">
       <div class="copyright">
-       <strong>State of the Map Argentina</strong> - Santa Fe 2019
+        <strong>State of the Map Argentina</strong> - Santa Fe 2019
       </div>
       <div class="credits">
-     
+
         <!--
           All the links in the footer should remain intact.
           You can delete the links only if you purchased the pro version.
@@ -784,7 +794,7 @@
       </div>
     </div>
   </footer>
-    
+
   <!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
